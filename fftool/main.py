@@ -73,20 +73,19 @@ uninstall.add_argument(
 options = parser.parse_args()
 
 if options.command == 'download':
-    print("Now we're downloadin' [channel: {0}]".format(options.channel))
+    print("Downloading Firefox... [channel: {0}]".format(options.channel))
 
 elif options.command == 'install':
-    print("Now we're instalin' [channel: {0}]".format(options.channel))
+    print("Installing Firefox... [channel: {0}]".format(options.channel))
 
 elif options.command == 'profile':
-    print("Now we're profilin'")
     if options.create:
-        print("Creating profile [name: {0}]".format(options.create))
+        print("Creating Firefox profile... [name: {0}]".format(options.create))
 
     if options.delete:
-        print("Deleting profile [name: {0}]".format(options.delete))
+        print("Deleting Firefox profile... [name: {0}]".format(options.delete))
 
 elif options.command == 'uninstall':
-    print("Now we're uninstallin' [channel: {0}]".format(options.channel))
+    print("Uninstalling Firefox... [channel: {0}]".format(options.channel))
 
 print(options)
